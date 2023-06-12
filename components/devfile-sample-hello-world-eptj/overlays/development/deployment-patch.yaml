@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hello-world-eptj
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-mqtu-tenant/build-suite-test-application-xjrf/devfile-sample-hello-world-eptj@sha256:40e4d84c064d6188f66bbdaff5f788dee2af749e89cd1879c1d1de69654acdc1
+        name: my-nginx
+        resources: {}
+status: {}
